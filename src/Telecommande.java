@@ -1,20 +1,18 @@
-package td6;
-
 import java.util.ArrayList;
 
 public class Telecommande {
-    public ArrayList<td6.Lampe> tab = new ArrayList<td6.Lampe>();
+    public ArrayList<Lampe> tab = new ArrayList<Lampe>();
 
     public Telecommande() {
-        this.tab = new ArrayList<td6.Lampe>();
+        this.tab = new ArrayList<Lampe>();
     }
 
-    public void ajouterLampe(td6.Lampe lampe) {
+    public void ajouterLampe(Lampe lampe) {
         this.tab.add(lampe);
     }
 
 
-    public void ajouterLampes(td6.Lampe lampe) {
+    public void ajouterLampes(Lampe lampe) {
         this.tab.add(lampe);
     }
 
@@ -49,5 +47,30 @@ public class Telecommande {
         return r;
 
     }
+
+    //Methode pour gerer les chaine hifi
+    public void activerChaineHifi(int indice) {
+        for (int i = 0; i < this.tab.size(); i++) {
+            if (i == indice) {
+                this.tab.get(i).allumer();
+            }
+        }
+    }
+
+    public void desactiverChaineHifi(int indice) {
+        for (int i = 0; i < this.tab.size(); i++) {
+            if (i == indice) {
+                this.tab.get(i).eteindre();
+            }
+        }
+    }
+
+    public void activerToutChaineHifi() {
+        for (int i = 0; i < this.tab.size(); i++) {
+            this.tab.get(i).allumer();
+        }
+    }
+
+
 
 }

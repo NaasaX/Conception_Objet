@@ -1,10 +1,9 @@
 import org.junit.jupiter.api.Test;
-import td6.Lampe;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
- * classe de test permettant de tester la classe td6.Lampe
+ * classe de test permettant de tester la classe Lampe
  */
 public class LampeTest {
 

@@ -1,4 +1,3 @@
-package td6;
 /**
  * classe qui represente une chaine hifi
  */
@@ -13,7 +12,7 @@ public class Hifi {
     /**
      * permet d'allumer ou d'augmenter le son de la chaine
      */
-    public void allumerHifi() {
+    public void allumer() {
         this.son += 10;
         // son maximum
         if (this.son > 100)
@@ -35,7 +34,7 @@ public class Hifi {
      */
     public String toString() {
         String r = "";
-        r += "td6.:" + son;
+        r += "Hifi:" + son;
         return (r);
     }
 }

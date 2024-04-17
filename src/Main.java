@@ -1,4 +1,3 @@
-package td6;
 import java.util.Scanner;
 
 
@@ -8,7 +7,7 @@ import java.util.Scanner;
 
 public class Main {
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         // la telecommande vide
         Telecommande t = new Telecommande();
 
