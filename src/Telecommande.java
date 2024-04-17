@@ -48,4 +48,12 @@ public class Telecommande {
 
     }
 
+    public void changerIntensite(int i) {
+        for (int j = 0; j < this.tab.size(); j++) {
+            if (this.tab.get(j) instanceof Adapter) {
+                ((Adapter) this.tab.get(j)).changerIntensite(i);
+            }
+        }
+    }
+
 }

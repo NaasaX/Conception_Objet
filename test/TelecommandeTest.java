@@ -1,6 +1,7 @@
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class TelecommandeTest {
     @Test
@@ -94,5 +95,36 @@ public class TelecommandeTest {
         //verification
         boolean res = t.tab.get(0).isAllume();
         assertEquals(res, true);
+    }
+
+
+    @Test
+    public void changerIntensiteCheminee() {
+        //preparation des donnees
+        Telecommande t = new Telecommande();
+        Cheminee c = new Cheminee();
+        Adapter a = new Adapter(c);
+        t.ajouterAppareil(a);
+
+        //methode testee
+        t.changerIntensite(50);
+
+        //verification
+        assertEquals(50, c.getLumiere());
+    }
+
+    @Test
+    public void changerIntensiteCheminee2() {
+        //preparation des donnees
+        Telecommande t = new Telecommande();
+        Cheminee c = new Cheminee();
+        Adapter a = new Adapter(c);
+        t.ajouterAppareil(a);
+
+        //methode testee
+        t.changerIntensite(0);
+
+        //verification
+        assertEquals(0, c.getLumiere());
     }
 }
