@@ -1,22 +1,22 @@
 import java.util.ArrayList;
 
 public class Telecommande {
-    public ArrayList<Lampe> tab = new ArrayList<Lampe>();
+    public ArrayList<Appareil> tab;
 
     public Telecommande() {
-        this.tab = new ArrayList<Lampe>();
+        this.tab = new ArrayList<Appareil>();
     }
 
-    public void ajouterLampe(Lampe lampe) {
-        this.tab.add(lampe);
+    public void ajouterAppareil(Appareil ap) {
+        this.tab.add(ap);
     }
 
 
-    public void ajouterLampes(Lampe lampe) {
-        this.tab.add(lampe);
-    }
+//    public void ajouterLampes(Lampe lampe) {
+//        this.tab.add(lampe);
+//    }
 
-    public void activerLampe(int indice) {
+    public void activerAppareil(int indice) {
         for (int i = 0; i < this.tab.size(); i++) {
             if (i == indice) {
                 this.tab.get(i).allumer();
@@ -25,7 +25,7 @@ public class Telecommande {
     }
 
 
-    public void desactiverLampe(int indice) {
+    public void desactiverAppareil(int indice) {
         for (int i = 0; i < this.tab.size(); i++) {
             if (i == indice) {
                 this.tab.get(i).eteindre();
@@ -47,30 +47,5 @@ public class Telecommande {
         return r;
 
     }
-
-    //Methode pour gerer les chaine hifi
-    public void activerChaineHifi(int indice) {
-        for (int i = 0; i < this.tab.size(); i++) {
-            if (i == indice) {
-                this.tab.get(i).allumer();
-            }
-        }
-    }
-
-    public void desactiverChaineHifi(int indice) {
-        for (int i = 0; i < this.tab.size(); i++) {
-            if (i == indice) {
-                this.tab.get(i).eteindre();
-            }
-        }
-    }
-
-    public void activerToutChaineHifi() {
-        for (int i = 0; i < this.tab.size(); i++) {
-            this.tab.get(i).allumer();
-        }
-    }
-
-
 
 }

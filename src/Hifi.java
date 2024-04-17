@@ -1,7 +1,7 @@
 /**
  * classe qui represente une chaine hifi
  */
-public class Hifi {
+public class Hifi implements Appareil{
 
     /**
      * l'intensite du son de la chaine on suppose que la chaine est eteinte si
@@ -25,6 +25,14 @@ public class Hifi {
     public void eteindre() {
         this.son = 0;
 
+    }
+
+    @Override
+    public boolean isAllume() {
+        boolean b = false;
+        if(son>0)
+            b=true;
+        return b;
     }
 
     /**

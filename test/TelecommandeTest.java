@@ -10,7 +10,7 @@ public class TelecommandeTest {
         Lampe l = new Lampe("lampe1");
 
         //methode testee
-        t.ajouterLampes(l);
+        t.ajouterAppareil(l);
 
         //verification
         assertEquals("lampe1: Off", t.tab.get(0).toString());
@@ -22,10 +22,10 @@ public class TelecommandeTest {
         Telecommande t = new Telecommande();
         Lampe l = new Lampe("lampe1");
         Lampe l2 = new Lampe("lampe2");
-        t.ajouterLampes(l);
+        t.ajouterAppareil(l);
 
         //methode testee
-        t.ajouterLampes(l2);
+        t.ajouterAppareil(l2);
 
         //verification
         assertEquals(t.tab.size(), 2);
@@ -36,10 +36,10 @@ public class TelecommandeTest {
         //preparation des donnees
         Telecommande t = new Telecommande();
         Lampe l = new Lampe("lampe1");
-        t.ajouterLampe(l);
+        t.ajouterAppareil(l);
 
         //methode testee
-        t.activerLampe(0);
+        t.activerAppareil(0);
 
         //verification
         boolean res = t.tab.get(0).isAllume();
@@ -54,11 +54,11 @@ public class TelecommandeTest {
         Telecommande t = new Telecommande();
         Lampe l = new Lampe("lampe1");
         Lampe l2 = new Lampe("lampe2");
-        t.ajouterLampe(l);
-        t.ajouterLampe(l2);
+        t.ajouterAppareil(l);
+        t.ajouterAppareil(l2);
 
         //methode testee
-        t.activerLampe(1);
+        t.activerAppareil(1);
 
         //verification
         boolean res = t.tab.get(1).isAllume();
@@ -81,4 +81,18 @@ public class TelecommandeTest {
 //        assertEquals(res, "la lampe n'existe pas" );
 //    }
 
+    @Test
+    public void testActiverHifiPosition0() {
+        //preparation des donnees
+        Telecommande t = new Telecommande();
+        Hifi h = new Hifi();
+        t.ajouterAppareil(h);
+
+        //methode testee
+        t.activerAppareil(0);
+
+        //verification
+        boolean res = t.tab.get(0).isAllume();
+        assertEquals(res, true);
+    }
 }
