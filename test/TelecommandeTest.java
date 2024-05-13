@@ -1,3 +1,4 @@
+import TD_telecommande.*;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -70,8 +71,8 @@ public class TelecommandeTest {
 //    @Test
 //    public void testActiverLampeInexistante(){
 //        //preparation des donnees
-//        Telecommande t = new Telecommande();
-//        Lampe l = new Lampe("lampe1");
+//        TD_telecommande.Telecommande t = new TD_telecommande.Telecommande();
+//        TD_telecommande.Lampe l = new TD_telecommande.Lampe("lampe1");
 //        t.ajouterLampe(l);
 //
 //        //methode testee

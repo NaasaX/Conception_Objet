@@ -1,3 +1,5 @@
+package TD_telecommande;
+
 public interface Appareil {
 
     public void allumer();

@@ -1,3 +1,5 @@
+package TD_telecommande;
+
 /**
  * La classe td6.td6. qui represente une lampe qu'on peut allumer et eteindre.
  *

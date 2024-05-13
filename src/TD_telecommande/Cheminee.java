@@ -1,3 +1,5 @@
+package TD_telecommande;
+
 /**
  * classe qui permet de modeliser une cheminee electrique
  * ce classe doit etre utilisee avec la telecommande

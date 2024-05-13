@@ -1,9 +1,10 @@
+import TD_telecommande.Lampe;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
- * classe de test permettant de tester la classe Lampe
+ * classe de test permettant de tester la classe TD_telecommande.Lampe
  */
 public class LampeTest {
 

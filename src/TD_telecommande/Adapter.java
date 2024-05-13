@@ -1,3 +1,5 @@
+package TD_telecommande;
+
 public class Adapter implements Appareil{
     @Override
     public void allumer() {

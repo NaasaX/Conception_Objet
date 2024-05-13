@@ -1,3 +1,5 @@
+package TD_telecommande;
+
 /**
  * classe qui represente une chaine hifi
  */
@@ -36,13 +38,13 @@ public class Hifi implements Appareil{
     }
 
     /**
-     * surcharge de la methode affichage sous la forme "Hifi:10"
+     * surcharge de la methode affichage sous la forme "TD_telecommande.Hifi:10"
      *
      * @return descriptif sous forme de chaine
      */
     public String toString() {
         String r = "";
-        r += "Hifi:" + son;
+        r += "TD_telecommande.Hifi:" + son;
         return (r);
     }
 }

@@ -1,3 +1,5 @@
+package TD_telecommande;
+
 import java.util.ArrayList;
 
 public class Telecommande {
@@ -12,7 +14,7 @@ public class Telecommande {
     }
 
 
-//    public void ajouterLampes(Lampe lampe) {
+//    public void ajouterLampes(TD_telecommande.Lampe lampe) {
 //        this.tab.add(lampe);
 //    }
 
