@@ -98,4 +98,24 @@ public class CD {
     }
 
     // TODO
+
+    //getter nomCD
+    public String getNomCD() {
+        return nomCD;
+    }
+
+    //getter nomArtiste
+    public String getNomArtiste() {
+        return nomArtiste;
+    }
+
+    //getter pistes
+    public List<InfoPiste> getPistes() {
+        return pistes;
+    }
+
+
+
+
 }
+

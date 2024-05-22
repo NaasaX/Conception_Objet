@@ -1,6 +1,7 @@
 package TD11.donnees;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * La classe Magasin represente un magasin qui vend des CDs.</p>
@@ -69,5 +70,38 @@ public class Magasin {
     }
 
     // TODO  ajouter une methode de tri
+
+    //methode de tri par artiste
+    public void trierArtiste() {
+
+        for (int i = 0; i < listeCds.size(); i++) {
+            for (int j = 0; j < listeCds.size(); j++) {
+                if (listeCds.get(i).getNomArtiste().compareTo(listeCds.get(j).getNomArtiste()) < 0) {
+                    CD temp = listeCds.get(i);
+                    listeCds.set(i, listeCds.get(j));
+                    listeCds.set(j, temp);
+                }
+            }
+        }
+
+
+    }
+
+    //methode de tri par album
+    public void trierAlbum() {
+        for (int i = 0; i < listeCds.size(); i++) {
+            for (int j = 0; j < listeCds.size(); j++) {
+                if (listeCds.get(i).getNomCD().compareTo(listeCds.get(j).getNomCD()) < 0) {
+                    CD temp = listeCds.get(i);
+                    listeCds.set(i, listeCds.get(j));
+                    listeCds.set(j, temp);
+                }
+            }
+        }
+    }
+
+
+
+
 
 }

@@ -62,4 +62,8 @@ public class InfoPiste {
             sSecondes = "0" + secondes;
         return ("" + min + ":" + sSecondes);
     }
+
+    public Comparable<Object> getTitre() {
+        return null;
+    }
 }
